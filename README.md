@@ -12,3 +12,6 @@ Some general rules of thumb when working with module globals or singleton class 
 
 1. Set once during construction or global module initialization.  If setting is asynchronous, and done one time only, set the global/member to a Promise or Promise'T.
 2. If a global/member value needs to be updated, use some locking/synchronizing mechanism, such as a mutex, to prevent multiple updates.  If an update condition is true, after entering the synchronized code block, check again if the value needs to be updated.  The value may already have been updated while waiting on a lock to be released.
+
+Video demonstration
+https://youtu.be/ZTiiA4ABtOc
